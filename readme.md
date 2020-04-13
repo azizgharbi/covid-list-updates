@@ -2,6 +2,6 @@
 
 this app will gives you an update about the actual situation you can export this app to android or ios.
 
-## Screenshots
+## Screenshot
 
 ![Screenshots](img/covid.jpg)
