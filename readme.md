@@ -1,6 +1,9 @@
 # CIVID-19 application
 
-this app will gives you an update about the actual situation you can export this app to android or ios.
+This app will gives you an update about the actual situation you can export this app to android or ios.
+
+- "android": "expo start --android",
+- "ios": "expo start --ios",
 
 ## Screenshot
 
