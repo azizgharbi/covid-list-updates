@@ -20,8 +20,8 @@ export default function AllStats() {
 
   return loading ? (
     <React.Fragment>
-      {stats.map(({ country, cases, todayCases, deaths }) => (
-        <List.Section>
+      {stats.map(({ country, cases, todayCases, deaths }, index) => (
+        <List.Section key={index}>
           <List.Accordion
             title={country}
             left={(props) => <List.Icon {...props} icon="chevron-right" />}
