@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, SafeAreaView, ScrollView } from "react-native";
+import { StyleSheet, SafeAreaView, ScrollView, Text } from "react-native";
 import Constants from "expo-constants";
 
 // Components
@@ -16,14 +16,18 @@ const styles = StyleSheet.create({
     backgroundColor: "#dff9fb",
     marginHorizontal: 5,
   },
+  section: {
+    marginTop: 25,
+  },
 });
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollView}>
-        <AllStats></AllStats>
-        <StatsByCountry></StatsByCountry>
+        <Text>Here you can find updates about COVID-19:</Text>
+        <AllStats style={styles.section}></AllStats>
+        <StatsByCountry style={styles.section}></StatsByCountry>
       </ScrollView>
     </SafeAreaView>
   );

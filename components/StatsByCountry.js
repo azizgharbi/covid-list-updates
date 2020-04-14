@@ -20,8 +20,8 @@ export default function AllStats() {
 
   return loading ? (
     <React.Fragment>
-      {stats.map(({ country, cases, todayCases, deaths }, index) => (
-        <List.Section key={index}>
+      {stats.map(({ country, cases, todayCases, deaths }) => (
+        <List.Section>
           <List.Accordion
             title={country}
             left={(props) => <List.Icon {...props} icon="chevron-right" />}
@@ -34,6 +34,6 @@ export default function AllStats() {
       ))}
     </React.Fragment>
   ) : (
-    <ActivityIndicator size="large" color="#ffbe76" />
+    <ActivityIndicator size="small" color="#00ff00" />
   );
 }

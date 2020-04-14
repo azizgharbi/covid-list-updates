@@ -19,7 +19,7 @@ export default function AllStats() {
   }, []);
 
   return loading ? (
-    <List.Section title="Here you can find updates about COVID-19:">
+    <List.Section>
       <List.Accordion
         title="All over the world"
         left={(props) => <List.Icon {...props} icon="chart-line" />}
@@ -37,6 +37,6 @@ export default function AllStats() {
       </List.Accordion>
     </List.Section>
   ) : (
-    <ActivityIndicator size="large" color="#ffbe76" />
+    <ActivityIndicator size="y" color="#ffbe76" />
   );
 }
